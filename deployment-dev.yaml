@@ -26,8 +26,7 @@ kind: Service
 metadata:
   name: flask-service
 spec:
-  type: LoadBalancer 
-  loadBalancerIP: 10.48.229.32     #<-----change this!!!!                             
+  type: NodePort     #<-----change this!!!!                             
   ports:
   - protocol: TCP
     port: 5000
